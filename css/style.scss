@@ -1,0 +1,141 @@
+@import "modules/general";
+@import "modules/grid";
+@import "modules/typo";
+@import "modules/spacer";
+@import "modules/image";
+@import "modules/background";
+@import "modules/button";
+@import "modules/shadow";
+@import "modules/border";
+
+// header
+header {
+    padding: 0.5rem 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 99;
+
+    a {
+        color: white;
+        padding: 1rem;
+    }
+
+    .navbar {
+        a {
+            &:hover {
+                background: white;
+                color: $pink;
+            }
+        }
+    }
+
+    .button {
+        border: 1px solid white;
+    }
+}
+
+#burger {
+    display: none;
+}
+
+// home
+.hire {
+    padding: 10px 20px;
+    border: 1px solid white;
+    transition: .5s;
+
+    &:hover {
+        background: white;
+        color: $pink;
+    }
+}
+
+.CV {
+    a {
+        text-decoration: underline;
+    }
+
+    &:hover {
+        a {
+            color: $halfwhite;
+        }
+    }
+}
+
+// services
+.card {
+    background: $pink;
+    padding: 100px 79px 50px 79px;
+    filter: drop-shadow(0px 10px 4px rgba(0, 0, 0, 0.1));
+
+    i {
+        padding: 1rem;
+        border: 1px solid white;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+        filter: drop-shadow(0px 10px 4px rgba(0, 0, 0, 0.25));
+        background: $beige;
+        border: 1px solid white;
+        cursor: pointer;
+    }
+}
+
+// contact
+.sticker {
+    background: $pink;
+    padding: 10% 22.5% 5% 22.5%;
+}
+
+.share {
+    a {
+        color: white;
+        background: $halfblack;
+        height: 5rem;
+        width: 5rem;
+        line-height: 5rem;
+        border-radius: 50%;
+        margin: 0.5rem;
+
+        &:hover {
+            background: $pink;
+            border: 1px solid $pink;
+            transform: scale(1.2);
+            transition: .5s;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    #burger {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        background: $quarterblack;
+        top: 100%;
+        right: -100%;
+        width: 70%;
+        text-align: center;
+        height: 100vh;
+
+        a {
+            display: block;
+            margin-top: 8rem;
+
+
+        }
+
+        .button {
+            margin: 8rem 25%;
+        }
+
+        &.active {
+            right: 0;
+        }
+
+    }
+}
