@@ -6,3 +6,65 @@ $pink:#DBC1D5;
 $beige:#DDD8D8;
 $halfpink: rgba(219, 193, 213, 0.5);
 $halfbeige: rgba(221, 216, 216, 0.5);
+
+.bg-image {
+    background-image: url(/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-pink {
+    background: $pink;
+}
+
+.bg-beige {
+    background: $beige;
+}
+
+.bg-halfpink {
+    background: $halfpink;
+}
+
+.bg-halfbeige {
+    background: $halfbeige;
+}
+
+.bg-halfblack {
+    background: $halfblack;
+}
+
+.bg-quarterblack {
+    background: $quarterblack;
+}
+
+.black {
+    color: black;
+}
+
+.white {
+    color: white;
+}
+
+.halfwhite {
+    color: $halfwhite;
+}
+
+.halfblack {
+    color: $halfblack;
+}
+
+.quarterwhite {
+    color: $quarterwhite;
+}
+
+
+@media screen and(max-width:1024px) {}
+
+@media screen and(max-width:768px) {
+    .bg-pink-s {
+        background: $pink;
+    }
+}
+
+@media screen and(max-width:414px) {}
